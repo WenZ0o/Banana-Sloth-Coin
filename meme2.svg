@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1b1b1b"/>
+      <stop offset="1" stop-color="#0d0d0d"/>
+    </linearGradient>
+    <filter id="glow"><feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#ffeb3b"/></filter>
+  </defs>
+  <rect width="480" height="320" fill="url(#bg)"/>
+  <g transform="translate(40,40)">
+    <ellipse cx="180" cy="140" rx="130" ry="96" fill="#6b4f3d"/>
+    <ellipse cx="140" cy="120" rx="28" ry="20" fill="#fff2cc"/>
+    <ellipse cx="220" cy="120" rx="28" ry="20" fill="#fff2cc"/>
+    <circle cx="140" cy="120" r="6" fill="#2b2b2b"/>
+    <circle cx="220" cy="120" r="6" fill="#2b2b2b"/>
+    <path d="M110 170q70 28 140 0" stroke="#2b2b2b" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <path d="M250 84c32 12 50 30 38 54-14 26-68 26-100-8-14-16-36-32-34-46 6-26 38-2 96 0z" fill="#ffeb3b" stroke="#c8a904" stroke-width="6"/>
+  </g>
+  <text x="240" y="300" text-anchor="middle" font-family="Impact, system-ui, sans-serif" font-size="24" fill="#fff" filter="url(#glow)">Frictionless banana economics.</text>
+</svg>
