@@ -1,40 +1,57 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#1a1a1a"/>
-      <stop offset="1" stop-color="#0d0d0d"/>
-    </linearGradient>
-    <filter id="glow"><feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#ffeb3b"/></filter>
-    <!-- embed the monkey logo as a symbol -->
-    <symbol id="monkey" viewBox="0 0 360 360">
-      <rect width="360" height="360" rx="36" fill="#101010"/>
-      <g transform="translate(20,16)">
-        <circle cx="84" cy="118" r="44" fill="#5a3b25"/>
-        <circle cx="236" cy="118" r="44" fill="#5a3b25"/>
-        <circle cx="84" cy="118" r="26" fill="#d9b996"/>
-        <circle cx="236" cy="118" r="26" fill="#d9b996"/>
-        <ellipse cx="160" cy="178" rx="130" ry="108" fill="#6f4a2e"/>
-        <ellipse cx="160" cy="196" rx="106" ry="82" fill="#e4c7a6"/>
-        <circle cx="130" cy="186" r="14" fill="#fff"/>
-        <circle cx="190" cy="186" r="14" fill="#fff"/>
-        <circle cx="130" cy="186" r="6" fill="#2b2b2b"/>
-        <circle cx="190" cy="186" r="6" fill="#2b2b2b"/>
-        <path d="M100 228q60 34 120 0" fill="none" stroke="#2b2b2b" stroke-width="8" stroke-linecap="round"/>
-        <rect x="172" y="226" width="10" height="12" rx="2" fill="#ffd54f" stroke="#c8a904" stroke-width="2"/>
-        <path d="M96 128c42-30 100-30 146 0-24 18-122 22-146 0z" fill="#ffeb3b" stroke="#c8a904" stroke-width="6" stroke-linejoin="round"/>
-        <g>
-          <rect x="98" y="168" width="70" height="34" rx="10" fill="#0b0b0b"/>
-          <rect x="174" y="168" width="70" height="34" rx="10" fill="#0b0b0b"/>
-          <rect x="168" y="178" width="12" height="12" fill="#0b0b0b"/>
-          <path d="M102 172l26-8m118 8l-26-8" stroke="#ffffff" stroke-opacity=".2" stroke-width="4"/>
-        </g>
+  <rect width="640" height="420" fill="#07090f"/>
+  <g fill="#fff">
+    <circle cx="40" cy="30" r="1">
+      <animate attributeName="opacity" values="1;.4;1" dur="1.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="120" cy="60" r="1.5">
+      <animate attributeName="opacity" values="1;.3;1" dur="2.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="220" cy="40" r="1">
+      <animate attributeName="opacity" values="1;.2;1" dur="1.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="420" cy="30" r="1"/>
+    <circle cx="500" cy="80" r="1.2">
+      <animate attributeName="opacity" values="1;.5;1" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="580" cy="50" r="1"/>
+    <circle cx="70" cy="200" r="1.4"/>
+    <circle cx="320" cy="140" r="1.2"/>
+    <circle cx="560" cy="220" r="1.6"/>
+    <circle cx="300" cy="300" r="1.2"/>
+    <circle cx="460" cy="260" r="1.2"/>
+    <circle cx="90" cy="320" r="1"/>
+  </g>
+  <circle cx="520" cy="110" r="36" fill="#cfd8dc"/>
+  
+<defs>
+  <linearGradient id="gradSun" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe680"/><stop offset="1" stop-color="#ffcf33"/></linearGradient>
+  <symbol id="monkey" viewBox="0 0 360 360">
+    <rect width="360" height="360" rx="36" fill="#101010"/>
+    <g transform="translate(20,16)">
+      <circle cx="84" cy="118" r="44" fill="#5a3b25"/>
+      <circle cx="236" cy="118" r="44" fill="#5a3b25"/>
+      <circle cx="84" cy="118" r="26" fill="#d9b996"/>
+      <circle cx="236" cy="118" r="26" fill="#d9b996"/>
+      <ellipse cx="160" cy="178" rx="130" ry="108" fill="#6f4a2e"/>
+      <ellipse cx="160" cy="196" rx="106" ry="82" fill="#e4c7a6"/>
+      <circle cx="130" cy="186" r="14" fill="#fff"/>
+      <circle cx="190" cy="186" r="14" fill="#fff"/>
+      <circle cx="130" cy="186" r="6" fill="#2b2b2b"/>
+      <circle cx="190" cy="186" r="6" fill="#2b2b2b"/>
+      <path d="M100 228q60 34 120 0" fill="none" stroke="#2b2b2b" stroke-width="8" stroke-linecap="round"/>
+      <rect x="172" y="226" width="10" height="12" rx="2" fill="url(#gradSun)" stroke="#c8a904" stroke-width="2"/>
+      <path d="M96 128c42-30 100-30 146 0-24 18-122 22-146 0z" fill="#ffeb3b" stroke="#c8a904" stroke-width="6" stroke-linejoin="round"/>
+      <g>
+        <rect x="98" y="168" width="70" height="34" rx="10" fill="#0b0b0b"/>
+        <rect x="174" y="168" width="70" height="34" rx="10" fill="#0b0b0b"/>
+        <rect x="168" y="178" width="12" height="12" fill="#0b0b0b"/>
+        <path d="M102 172l26-8m118 8l-26-8" stroke="#ffffff" stroke-opacity=".2" stroke-width="4"/>
       </g>
-    </symbol>
-  </defs>
-  <rect width="640" height="420" fill="url(#bg)"/>
-  <use href="#monkey" x="150" y="18" width="340" height="340"/>
-  <text x="320" y="388" text-anchor="middle"
-        font-family="Impact, system-ui, Arial, sans-serif"
-        font-size="32" stroke="#000" stroke-width="5" paint-order="stroke"
-        fill="#fff">Sleep-to-Earn economy.</text>
+    </g>
+  </symbol>
+</defs>
+
+  <use href="#monkey" x="140" y="50" width="340" height="340"/>
+  <text x="320" y="395" text-anchor="middle" font-family="Impact, system-ui, Arial, sans-serif" font-size="30" stroke="#000" stroke-width="5" paint-order="stroke" fill="#fff">Sleep-to-Earn economy.</text>
 </svg>
