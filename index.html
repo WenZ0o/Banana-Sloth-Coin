@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Banana Sloth Coin 🍌🦥 — Slow. Lazy. To The Moon.</title>
-  <meta name="description" content="Banana Sloth Coin — banana-logic memecoin with animated monkey memes.">
+  <title>BananaSlothCoin 🍌🦥 — Slow. Lazy. To The Moon.</title>
+  <meta name="description" content="BananaSlothCoin — banana-logic memecoin with animated monkey memes.">
   <link rel="icon" href="logo.svg" type="image/svg+xml" />
   <style>
     :root{
@@ -51,9 +51,9 @@
 <body>
   <div class="wrap">
     <header>
-      <img src="logo.svg" alt="Banana Sloth Coin Logo"/>
+      <img src="logo.svg" alt="BananaSlothCoin Logo"/>
       <div>
-        <h1 class="title">Banana Sloth Coin</h1>
+        <h1 class="title">BananaSlothCoin</h1>
         <div class="subtitle">Slow. Lazy. To The Moon. 🚀</div>
       </div>
       <button class="btn">Buy (...or later)</button>
@@ -61,9 +61,9 @@
 
     <div class="section">
       <div class="card">
-        <h2>What is Banana Sloth Coin?</h2>
-        <p>Banana Sloth Coin is the ultimate memecoin. Each transaction “feeds” a virtual banana to a monkey — sunglasses on, gold tooth flashing, BSC badge shining. No utility, no roadmap, just bananas and vibes.</p>
-        <p><strong>Disclaimer:</strong> This project is amazing.</p>
+        <h2>What is BananaSlothCoin?</h2>
+        <p>BananaSlothCoin is the ultimate memecoin with ZERO utility. Each transaction “feeds” a virtual banana to a monkey — sunglasses on, gold tooth flashing, BSC badge shining. No utility, no roadmap, just bananas and vibes.</p>
+        <p><strong>Disclaimer:</strong> This project is satire. Not financial advice.</p>
       </div>
       <div class="card">
         <h2>Banana Orbit</h2>
@@ -72,6 +72,18 @@
             <img class="center" src="logo.svg" alt="Center Monkey Logo"/>
             <img class="banana" src="banana.svg" alt="Orbit Banana"/>
           </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="card" style="margin-top:18px">
+      <h2>Random Meme Generator</h2>
+      <div id="rngBox" style="display:grid;place-items:center;gap:12px">
+        <img id="rngMeme" src="meme1.svg" alt="Random Meme" style="width:min(640px,100%);border-radius:12px;border:1px solid var(--border);background:#111"/>
+        <div class="bar">
+          <button class="btn" id="shuffleBtn">Shuffle Meme</button>
+          <a class="dl" id="rngDownload" href="meme1.svg" download>Download</a>
         </div>
       </div>
     </div>
@@ -96,7 +108,7 @@
           <div class="bar">
             <div class="tags">
               <span class="tag">#Neon</span>
-              <span class="tag">#NapConsensus</span>
+              <span class="tag">#NapConsensus</span><span class="tag">#Female</span>
             </div>
             <a class="dl" href="meme2.svg" download>Download</a>
           </div>
@@ -118,7 +130,7 @@
           <div class="bar">
             <div class="tags">
               <span class="tag">#CRT</span>
-              <span class="tag">#HoldTheBranch</span>
+              <span class="tag">#HoldTheBranch</span><span class="tag">#Female</span>
             </div>
             <a class="dl" href="meme4.svg" download>Download</a>
           </div>
@@ -140,7 +152,7 @@
           <div class="bar">
             <div class="tags">
               <span class="tag">#Space</span>
-              <span class="tag">#SleepToEarn</span>
+              <span class="tag">#SleepToEarn</span><span class="tag">#Female</span>
             </div>
             <a class="dl" href="meme6.svg" download>Download</a>
           </div>
@@ -162,7 +174,7 @@
           <div class="bar">
             <div class="tags">
               <span class="tag">#Holo</span>
-              <span class="tag">#LazyByDesign</span>
+              <span class="tag">#LazyByDesign</span><span class="tag">#Female</span>
             </div>
             <a class="dl" href="meme8.svg" download>Download</a>
           </div>
@@ -171,7 +183,22 @@
       </div>
     </div>
 
-    <footer>© 2025 Banana Sloth Coin — Only vibes. 🍌🦧</footer>
+    <footer>© 2025 BananaSlothCoin — No utility. Only vibes. 🍌🦧</footer>
   </div>
+
+  <script>
+    (function(){
+      const files = ["meme1.svg","meme2.svg","meme3.svg","meme4.svg","meme5.svg","meme6.svg","meme7.svg","meme8.svg"];
+      const img = document.getElementById('rngMeme');
+      const dl = document.getElementById('rngDownload');
+      function shuffle(){
+        const pick = files[Math.floor(Math.random()*files.length)];
+        img.src = pick;
+        dl.href = pick;
+      }
+      const btn = document.getElementById('shuffleBtn');
+      if(btn){ btn.addEventListener('click', shuffle); shuffle(); }
+    })();
+  </script>
 </body>
 </html>
