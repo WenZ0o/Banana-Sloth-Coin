@@ -31,7 +31,7 @@
     <path d="M96 128c42-30 100-30 146 0-24 18-122 22-146 0z" fill="#ffeb3b" stroke="#c8a904" stroke-width="6" stroke-linejoin="round"/>
     <!-- sunglasses -->
     <g>
-      <rect x="98" y="168" width="1000" height="34" rx="10" fill="#0b0b0b"/>
+      <rect x="98" y="168" width="70" height="34" rx="10" fill="#0b0b0b"/>
       <rect x="174" y="168" width="70" height="34" rx="10" fill="#0b0b0b"/>
       <rect x="168" y="178" width="12" height="12" fill="#0b0b0b"/>
       <path d="M102 172l26-8m118 8l-26-8" stroke="#ffffff" stroke-opacity=".2" stroke-width="4"/>
