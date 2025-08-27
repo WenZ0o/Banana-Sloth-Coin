@@ -1,4 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420">
+
   <defs>
     <linearGradient id="neon" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00ffff"/><stop offset="1" stop-color="#ff00ff"/></linearGradient>
   </defs>
@@ -6,35 +7,44 @@
   <rect x="18" y="18" width="604" height="384" rx="20" fill="none" stroke="url(#neon)" stroke-width="6">
     <animate attributeName="opacity" values="1;0.6;1" dur="2.4s" repeatCount="indefinite"/>
   </rect>
+
+  <g transform="translate(160,40)">
+    
   
-<defs>
-  <linearGradient id="gradSun" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe680"/><stop offset="1" stop-color="#ffcf33"/></linearGradient>
-  <symbol id="monkey" viewBox="0 0 360 360">
-    <rect width="360" height="360" rx="36" fill="#101010"/>
-    <g transform="translate(20,16)">
+    <g>
       <circle cx="84" cy="118" r="44" fill="#5a3b25"/>
       <circle cx="236" cy="118" r="44" fill="#5a3b25"/>
       <circle cx="84" cy="118" r="26" fill="#d9b996"/>
       <circle cx="236" cy="118" r="26" fill="#d9b996"/>
       <ellipse cx="160" cy="178" rx="130" ry="108" fill="#6f4a2e"/>
       <ellipse cx="160" cy="196" rx="106" ry="82" fill="#e4c7a6"/>
+    </g>
+    
+  
       <circle cx="130" cy="186" r="14" fill="#fff"/>
       <circle cx="190" cy="186" r="14" fill="#fff"/>
       <circle cx="130" cy="186" r="6" fill="#2b2b2b"/>
       <circle cx="190" cy="186" r="6" fill="#2b2b2b"/>
-      <path d="M100 228q60 34 120 0" fill="none" stroke="#2b2b2b" stroke-width="8" stroke-linecap="round"/>
-      <rect x="172" y="226" width="10" height="12" rx="2" fill="url(#gradSun)" stroke="#c8a904" stroke-width="2"/>
-      <path d="M96 128c42-30 100-30 146 0-24 18-122 22-146 0z" fill="#ffeb3b" stroke="#c8a904" stroke-width="6" stroke-linejoin="round"/>
-      <g>
-        <rect x="98" y="168" width="70" height="34" rx="10" fill="#0b0b0b"/>
-        <rect x="174" y="168" width="70" height="34" rx="10" fill="#0b0b0b"/>
-        <rect x="168" y="178" width="12" height="12" fill="#0b0b0b"/>
-        <path d="M102 172l26-8m118 8l-26-8" stroke="#ffffff" stroke-opacity=".2" stroke-width="4"/>
-      </g>
+      <!-- blinking lids -->
+      <ellipse cx="130" cy="186" rx="14" ry="0" fill="#e4c7a6">
+        <animate attributeName="ry" values="0;14;0" dur="6s" begin="1s" keyTimes="0;.05;.1" repeatCount="indefinite"/>
+      </ellipse>
+      <ellipse cx="190" cy="186" rx="14" ry="0" fill="#e4c7a6">
+        <animate attributeName="ry" values="0;14;0" dur="6s" begin="2s" keyTimes="0;.05;.1" repeatCount="indefinite"/>
+      </ellipse>
+    
+  <!-- bow wiggle -->
+  <g transform="translate(160,140)">
+    <g>
+      <circle cx="-16" cy="-36" r="12" fill="#ff4081"/>
+      <circle cx="16" cy="-36" r="12" fill="#ff4081"/>
+      <circle cx="0" cy="-36" r="8" fill="#f8bbd0"/>
+      <animateTransform attributeName="transform" type="rotate" values="-6 0 -36;6 0 -36;-6 0 -36" dur="6s" repeatCount="indefinite"/>
     </g>
-  </symbol>
-</defs>
+  </g>
+  <!-- lipstick mouth -->
+  <path d="M120 228q40 24 80 0" fill="#e57373" stroke="#b71c1c" stroke-width="3" stroke-linecap="round"/>
 
-  <use href="#monkey" x="150" y="30" width="340" height="340"/>
-  <text x="320" y="395" text-anchor="middle" font-family="Impact, system-ui, Arial, sans-serif" font-size="30" stroke="#000" stroke-width="5" paint-order="stroke" fill="#fff">Proof-of-Nap consensus.</text>
+  </g>
+  <text x="320" y="398" text-anchor="middle" font-family="Impact, system-ui, Arial, sans-serif" font-size="30" stroke="#000" stroke-width="5" paint-order="stroke" fill="#fff">Proof-of-Nap consensus.</text>
 </svg>
