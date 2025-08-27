@@ -16,5 +16,5 @@
     <path d="M110 170q70 28 140 0" stroke="#2b2b2b" stroke-width="8" fill="none" stroke-linecap="round"/>
     <path d="M250 84c32 12 50 30 38 54-14 26-68 26-100-8-14-16-36-32-34-46 6-26 38-2 96 0z" fill="#ffeb3b" stroke="#c8a904" stroke-width="6"/>
   </g>
-  <text x="240" y="300" text-anchor="middle" font-family="Impact, system-ui, sans-serif" font-size="24" fill="#fff" filter="url(#glow)">CAPTION GOES HERE</text>
+  <text x="240" y="300" text-anchor="middle" font-family="Impact, system-ui, sans-serif" font-size="24" fill="#fff" filter="url(#glow)">Slowly but surely... to the moon.</text>
 </svg>
