@@ -36,7 +36,7 @@
       <rect x="168" y="178" width="12" height="12" fill="#0b0b0b"/>
       <path d="M102 172l26-8m118 8l-26-8" stroke="#ffffff" stroke-opacity=".2" stroke-width="4"/>
     </g>
-    <!-- BSC badge -->
+    <!-- $BSC badge -->
     <g transform="translate(240,258)">
       <circle cx="0" cy="0" r="34" fill="url(#shine)" stroke="#c8a904" stroke-width="4"/>
       <text x="0" y="6" text-anchor="middle" font-family="Impact, system-ui, Arial, sans-serif" font-size="22" fill="#3a2a00">BSC</text>
