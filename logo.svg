@@ -1,18 +1,45 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360">
   <defs>
-    <filter id="s" x="-50%" y="-50%" width="200%" height="200%">
-      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000" flood-opacity=".45"/>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000" flood-opacity=".5"/>
     </filter>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffe680"/><stop offset="1" stop-color="#ffcf33"/>
+    </linearGradient>
   </defs>
-  <rect width="256" height="256" rx="40" fill="#121212"/>
-  <g filter="url(#s)">
-    <ellipse cx="128" cy="150" rx="78" ry="58" fill="#6b4f3d"/>
-    <ellipse cx="100" cy="136" rx="18" ry="14" fill="#fff2cc"/>
-    <ellipse cx="156" cy="136" rx="18" ry="14" fill="#fff2cc"/>
-    <circle cx="100" cy="136" r="4" fill="#2b2b2b"/>
-    <circle cx="156" cy="136" r="4" fill="#2b2b2b"/>
-    <path d="M86 162q42 18 84 0" stroke="#2b2b2b" stroke-width="6" fill="none" stroke-linecap="round"/>
-    <path d="M178 92c18 8 30 20 22 36-9 18-45 18-66-6-9-10-24-22-22-32 4-18 26-2 66 2z" fill="#ffeb3b" stroke="#c8a904" stroke-width="4"/>
+  <rect width="360" height="360" rx="36" fill="#101010"/>
+  <g filter="url(#shadow)" transform="translate(20,16)">
+    <!-- ears -->
+    <circle cx="84" cy="118" r="44" fill="#5a3b25"/>
+    <circle cx="236" cy="118" r="44" fill="#5a3b25"/>
+    <circle cx="84" cy="118" r="26" fill="#d9b996"/>
+    <circle cx="236" cy="118" r="26" fill="#d9b996"/>
+    <!-- head -->
+    <ellipse cx="160" cy="178" rx="130" ry="108" fill="#6f4a2e"/>
+    <!-- face mask -->
+    <ellipse cx="160" cy="196" rx="106" ry="82" fill="#e4c7a6"/>
+    <!-- eyes (under glasses) -->
+    <circle cx="130" cy="186" r="14" fill="#fff"/>
+    <circle cx="190" cy="186" r="14" fill="#fff"/>
+    <circle cx="130" cy="186" r="6" fill="#2b2b2b"/>
+    <circle cx="190" cy="186" r="6" fill="#2b2b2b"/>
+    <!-- smile -->
+    <path d="M100 228q60 34 120 0" fill="none" stroke="#2b2b2b" stroke-width="8" stroke-linecap="round"/>
+    <!-- gold tooth -->
+    <rect x="172" y="226" width="10" height="12" rx="2" fill="url(#shine)" stroke="#c8a904" stroke-width="2"/>
+    <!-- banana hat -->
+    <path d="M96 128c42-30 100-30 146 0-24 18-122 22-146 0z" fill="#ffeb3b" stroke="#c8a904" stroke-width="6" stroke-linejoin="round"/>
+    <!-- sunglasses -->
+    <g>
+      <rect x="98" y="168" width="70" height="34" rx="10" fill="#0b0b0b"/>
+      <rect x="174" y="168" width="70" height="34" rx="10" fill="#0b0b0b"/>
+      <rect x="168" y="178" width="12" height="12" fill="#0b0b0b"/>
+      <path d="M102 172l26-8m118 8l-26-8" stroke="#ffffff" stroke-opacity=".2" stroke-width="4"/>
+    </g>
+    <!-- BSC badge -->
+    <g transform="translate(240,258)">
+      <circle cx="0" cy="0" r="34" fill="url(#shine)" stroke="#c8a904" stroke-width="4"/>
+      <text x="0" y="6" text-anchor="middle" font-family="Impact, system-ui, Arial, sans-serif" font-size="22" fill="#3a2a00">BSC</text>
+    </g>
   </g>
-  <text x="50%" y="44" text-anchor="middle" font-family="ui-rounded,system-ui" font-size="28" fill="#ffeb3b">Banana Sloth Coin</text>
 </svg>
