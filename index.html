@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BananaSlothCoin 🍌🦥 — Slow. Lazy. To The Moon.</title>
-  <meta name="description" content="BananaSlothCoin — a zero-utility memecoin that runs on banana-logic and monkey memes.">
+  <meta name="description" content="BananaSlothCoin — banana-logic memecoin with animated monkey memes.">
   <link rel="icon" href="logo.svg" type="image/svg+xml" />
   <style>
     :root{
@@ -38,7 +38,12 @@
     .orbit .banana{position:absolute;left:50%;top:-16px;transform:translateX(-50%);width:130px;height:130px;animation:spin 14s linear infinite}
     @keyframes spin{to{transform:translateX(-50%) rotate(360deg)}}
     .memes{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:12px}
-    .memes img, .memes svg{width:100%;border-radius:12px;border:1px solid var(--border);background:#111}
+    figure.meme{background:#101010;border:1px solid var(--border);border-radius:14px;padding:12px}
+    figure.meme img, figure.meme svg{width:100%;border-radius:10px;display:block;background:#111}
+    .bar{display:flex;justify-content:space-between;align-items:center;margin-top:10px;gap:10px;flex-wrap:wrap}
+    .tags{display:flex;gap:8px;flex-wrap:wrap}
+    .tag{font-size:12px;border:1px solid var(--border);border-radius:999px;padding:4px 8px;color:#eaeaea;background:#141414}
+    .dl{font-weight:800;border:1px solid var(--border);background:linear-gradient(180deg,var(--yellow),#ffd54f);color:#131200;text-decoration:none;border-radius:999px;padding:6px 10px}
     footer{color:#bdbdbd;text-align:center;margin:26px 0 10px}
     @media (max-width:860px){ .section{grid-template-columns:1fr} }
   </style>
@@ -46,7 +51,7 @@
 <body>
   <div class="wrap">
     <header>
-      <img src="logo.svg" alt="BananaSlothCoin Logo (Monkey + Shades + BSC)"/>
+      <img src="logo.svg" alt="BananaSlothCoin Logo"/>
       <div>
         <h1 class="title">BananaSlothCoin</h1>
         <div class="subtitle">Slow. Lazy. To The Moon. 🚀</div>
@@ -57,7 +62,7 @@
     <div class="section">
       <div class="card">
         <h2>What is BananaSlothCoin?</h2>
-        <p>BananaSlothCoin is the ultimate memecoin with ZERO utility. Each transaction “feeds” a virtual banana to a monkey — wearing sunglasses, rocking a gold tooth, and proudly flashing a BSC badge. No utility, no roadmap, just bananas and vibes.</p>
+        <p>BananaSlothCoin is the ultimate memecoin with ZERO utility. Each transaction “feeds” a virtual banana to a monkey — sunglasses on, gold tooth flashing, BSC badge shining. No utility, no roadmap, just bananas and vibes.</p>
         <p><strong>Disclaimer:</strong> This project is satire. Not financial advice.</p>
       </div>
       <div class="card">
@@ -72,26 +77,97 @@
     </div>
 
     <div class="card" style="margin-top:18px">
-      <h2>How It Works</h2>
-      <ul>
-        <li>Buy BananaSlothCoin.</li>
-        <li>Each transaction triggers an AI-generated meme.</li>
-        <li>Enjoy the slowest ride to the moon ever.</li>
-        <li>No utility, no roadmap — just bananas and vibes.</li>
-      </ul>
-    </div>
-
-    <div class="card" style="margin-top:18px">
       <h2>Latest AI Sloth Memes</h2>
       <div class="memes">
-        <img src="meme1.svg" alt="Meme 1"/>
-        <img src="meme2.svg" alt="Meme 2"/>
-        <img src="meme3.svg" alt="Meme 3"/>
-        <img src="meme4.svg" alt="Meme 4"/>
-        <img src="meme5.svg" alt="Meme 5"/>
-        <img src="meme6.svg" alt="Meme 6"/>
-        <img src="meme7.svg" alt="Meme 7"/>
-        <img src="meme8.svg" alt="Meme 8"/>
+
+        <figure class="meme">
+          <img src="meme1.svg" alt="Meme 1"/>
+          <div class="bar">
+            <div class="tags">
+              <span class="tag">#Vaporwave</span>
+              <span class="tag">#SlowToTheMoon</span>
+            </div>
+            <a class="dl" href="meme1.svg" download>Download</a>
+          </div>
+        </figure>
+
+        <figure class="meme">
+          <img src="meme2.svg" alt="Meme 2"/>
+          <div class="bar">
+            <div class="tags">
+              <span class="tag">#Neon</span>
+              <span class="tag">#NapConsensus</span>
+            </div>
+            <a class="dl" href="meme2.svg" download>Download</a>
+          </div>
+        </figure>
+
+        <figure class="meme">
+          <img src="meme3.svg" alt="Meme 3"/>
+          <div class="bar">
+            <div class="tags">
+              <span class="tag">#Comic</span>
+              <span class="tag">#BananaEconomics</span>
+            </div>
+            <a class="dl" href="meme3.svg" download>Download</a>
+          </div>
+        </figure>
+
+        <figure class="meme">
+          <img src="meme4.svg" alt="Meme 4"/>
+          <div class="bar">
+            <div class="tags">
+              <span class="tag">#CRT</span>
+              <span class="tag">#HoldTheBranch</span>
+            </div>
+            <a class="dl" href="meme4.svg" download>Download</a>
+          </div>
+        </figure>
+
+        <figure class="meme">
+          <img src="meme5.svg" alt="Meme 5"/>
+          <div class="bar">
+            <div class="tags">
+              <span class="tag">#Warning</span>
+              <span class="tag">#NGMI</span>
+            </div>
+            <a class="dl" href="meme5.svg" download>Download</a>
+          </div>
+        </figure>
+
+        <figure class="meme">
+          <img src="meme6.svg" alt="Meme 6"/>
+          <div class="bar">
+            <div class="tags">
+              <span class="tag">#Space</span>
+              <span class="tag">#SleepToEarn</span>
+            </div>
+            <a class="dl" href="meme6.svg" download>Download</a>
+          </div>
+        </figure>
+
+        <figure class="meme">
+          <img src="meme7.svg" alt="Meme 7"/>
+          <div class="bar">
+            <div class="tags">
+              <span class="tag">#Graffiti</span>
+              <span class="tag">#Patience</span>
+            </div>
+            <a class="dl" href="meme7.svg" download>Download</a>
+          </div>
+        </figure>
+
+        <figure class="meme">
+          <img src="meme8.svg" alt="Meme 8"/>
+          <div class="bar">
+            <div class="tags">
+              <span class="tag">#Holo</span>
+              <span class="tag">#LazyByDesign</span>
+            </div>
+            <a class="dl" href="meme8.svg" download>Download</a>
+          </div>
+        </figure>
+
       </div>
     </div>
 
