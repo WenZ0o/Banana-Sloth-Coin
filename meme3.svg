@@ -1,43 +1,42 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420">
-  <defs>
-    <pattern id="dots" width="10" height="10" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="1.5" fill="#333"/>
-    </pattern>
-  </defs>
+
+  <defs><pattern id="dots" width="10" height="10" patternUnits="userSpaceOnUse">
+    <circle cx="2" cy="2" r="1.5" fill="#333"/>
+  </pattern></defs>
   <rect width="640" height="420" fill="#141414"/>
   <rect width="640" height="420" fill="url(#dots)" opacity=".65"/>
+
+  <g transform="translate(160,40)">
+    
   
-<defs>
-  <linearGradient id="gradSun" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe680"/><stop offset="1" stop-color="#ffcf33"/></linearGradient>
-  <symbol id="monkey" viewBox="0 0 360 360">
-    <rect width="360" height="360" rx="36" fill="#101010"/>
-    <g transform="translate(20,16)">
+    <g>
       <circle cx="84" cy="118" r="44" fill="#5a3b25"/>
       <circle cx="236" cy="118" r="44" fill="#5a3b25"/>
       <circle cx="84" cy="118" r="26" fill="#d9b996"/>
       <circle cx="236" cy="118" r="26" fill="#d9b996"/>
       <ellipse cx="160" cy="178" rx="130" ry="108" fill="#6f4a2e"/>
       <ellipse cx="160" cy="196" rx="106" ry="82" fill="#e4c7a6"/>
+    </g>
+    
+  
       <circle cx="130" cy="186" r="14" fill="#fff"/>
       <circle cx="190" cy="186" r="14" fill="#fff"/>
       <circle cx="130" cy="186" r="6" fill="#2b2b2b"/>
       <circle cx="190" cy="186" r="6" fill="#2b2b2b"/>
-      <path d="M100 228q60 34 120 0" fill="none" stroke="#2b2b2b" stroke-width="8" stroke-linecap="round"/>
-      <rect x="172" y="226" width="10" height="12" rx="2" fill="url(#gradSun)" stroke="#c8a904" stroke-width="2"/>
-      <path d="M96 128c42-30 100-30 146 0-24 18-122 22-146 0z" fill="#ffeb3b" stroke="#c8a904" stroke-width="6" stroke-linejoin="round"/>
-      <g>
-        <rect x="98" y="168" width="70" height="34" rx="10" fill="#0b0b0b"/>
-        <rect x="174" y="168" width="70" height="34" rx="10" fill="#0b0b0b"/>
-        <rect x="168" y="178" width="12" height="12" fill="#0b0b0b"/>
-        <path d="M102 172l26-8m118 8l-26-8" stroke="#ffffff" stroke-opacity=".2" stroke-width="4"/>
-      </g>
-    </g>
-  </symbol>
-</defs>
+      <!-- blinking lids -->
+      <ellipse cx="130" cy="186" rx="14" ry="0" fill="#e4c7a6">
+        <animate attributeName="ry" values="0;14;0" dur="6s" begin="1s" keyTimes="0;.05;.1" repeatCount="indefinite"/>
+      </ellipse>
+      <ellipse cx="190" cy="186" rx="14" ry="0" fill="#e4c7a6">
+        <animate attributeName="ry" values="0;14;0" dur="6s" begin="2s" keyTimes="0;.05;.1" repeatCount="indefinite"/>
+      </ellipse>
+    
+  <path d="M100 228q60 34 120 0" fill="none" stroke="#2b2b2b" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="160" cy="192" r="140" fill="none" stroke="#cfd8dc" stroke-width="10"/>
+  <rect x="120" y="120" width="200" height="120" fill="white" opacity="0.06">
+    <animate attributeName="x" values="80;260;80" dur="7s" repeatCount="indefinite"/>
+  </rect>
 
-  <g transform="translate(160,40)">
-    <use href="#monkey" x="0" y="0" width="320" height="320"/>
-    <animateTransform attributeName="transform" type="rotate" values="-3 160 160;3 160 160;-3 160 160" dur="7s" repeatCount="indefinite"/>
   </g>
-  <text x="320" y="392" text-anchor="middle" font-family="Impact, system-ui, Arial, sans-serif" font-size="30" stroke="#000" stroke-width="5" paint-order="stroke" fill="#fff">Frictionless banana economics.</text>
+  <text x="320" y="398" text-anchor="middle" font-family="Impact, system-ui, Arial, sans-serif" font-size="30" stroke="#000" stroke-width="5" paint-order="stroke" fill="#fff">Frictionless banana economics.</text>
 </svg>
