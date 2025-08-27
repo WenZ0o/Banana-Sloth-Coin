@@ -1,43 +1,36 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420">
-  <defs>
-    <pattern id="stripes" width="24" height="24" patternUnits="userSpaceOnUse" patternTransform="rotate(35)">
-      <rect width="24" height="24" fill="#0e0e0e"/>
-      <rect width="12" height="24" fill="#ffeb3b" opacity=".18"/>
-    </pattern>
-  </defs>
+
+  <defs><pattern id="stripes" width="24" height="24" patternUnits="userSpaceOnUse" patternTransform="rotate(35)">
+    <rect width="24" height="24" fill="#0e0e0e"/>
+    <rect width="12" height="24" fill="#ffeb3b" opacity=".18"/>
+  </pattern></defs>
   <rect width="640" height="420" fill="url(#stripes)"/>
+
+  <g transform="translate(160,40)">
+    
   
-<defs>
-  <linearGradient id="gradSun" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe680"/><stop offset="1" stop-color="#ffcf33"/></linearGradient>
-  <symbol id="monkey" viewBox="0 0 360 360">
-    <rect width="360" height="360" rx="36" fill="#101010"/>
-    <g transform="translate(20,16)">
+    <g>
       <circle cx="84" cy="118" r="44" fill="#5a3b25"/>
       <circle cx="236" cy="118" r="44" fill="#5a3b25"/>
       <circle cx="84" cy="118" r="26" fill="#d9b996"/>
       <circle cx="236" cy="118" r="26" fill="#d9b996"/>
       <ellipse cx="160" cy="178" rx="130" ry="108" fill="#6f4a2e"/>
       <ellipse cx="160" cy="196" rx="106" ry="82" fill="#e4c7a6"/>
-      <circle cx="130" cy="186" r="14" fill="#fff"/>
-      <circle cx="190" cy="186" r="14" fill="#fff"/>
-      <circle cx="130" cy="186" r="6" fill="#2b2b2b"/>
-      <circle cx="190" cy="186" r="6" fill="#2b2b2b"/>
-      <path d="M100 228q60 34 120 0" fill="none" stroke="#2b2b2b" stroke-width="8" stroke-linecap="round"/>
-      <rect x="172" y="226" width="10" height="12" rx="2" fill="url(#gradSun)" stroke="#c8a904" stroke-width="2"/>
-      <path d="M96 128c42-30 100-30 146 0-24 18-122 22-146 0z" fill="#ffeb3b" stroke="#c8a904" stroke-width="6" stroke-linejoin="round"/>
-      <g>
-        <rect x="98" y="168" width="70" height="34" rx="10" fill="#0b0b0b"/>
-        <rect x="174" y="168" width="70" height="34" rx="10" fill="#0b0b0b"/>
-        <rect x="168" y="178" width="12" height="12" fill="#0b0b0b"/>
-        <path d="M102 172l26-8m118 8l-26-8" stroke="#ffffff" stroke-opacity=".2" stroke-width="4"/>
-      </g>
     </g>
-  </symbol>
-</defs>
+    
+  <!-- one eye -->
+  <circle cx="190" cy="186" r="14" fill="#fff"/>
+  <circle cx="190" cy="186" r="6" fill="#2b2b2b"/>
+  <!-- eyepatch -->
+  <circle cx="130" cy="186" r="14" fill="#0b0b0b"/>
+  <path d="M90 150l80 36" stroke="#0b0b0b" stroke-width="6"/>
+  <!-- bandana + tail -->
+  <rect x="96" y="152" width="128" height="18" rx="9" fill="#d50000"/>
+  <polygon id="tail" points="224,160 242,170 226,176" fill="#d50000">
+    <animateTransform attributeName="transform" type="rotate" values="0 224 160;10 224 160;0 224 160;-10 224 160;0 224 160" dur="5s" repeatCount="indefinite"/>
+  </polygon>
+  <path d="M100 228q60 34 120 0" fill="none" stroke="#2b2b2b" stroke-width="8" stroke-linecap="round"/>
 
-  <g transform="translate(150,30)">
-    <use href="#monkey" x="0" y="0" width="340" height="340"/>
-    <animateTransform attributeName="transform" type="skewX" values="0;4;0;-4;0" dur="6s" repeatCount="indefinite"/>
   </g>
-  <text x="320" y="395" text-anchor="middle" font-family="Impact, system-ui, Arial, sans-serif" font-size="30" stroke="#000" stroke-width="5" paint-order="stroke" fill="#fff">NGMI: Not Getting More Instant.</text>
+  <text x="320" y="398" text-anchor="middle" font-family="Impact, system-ui, Arial, sans-serif" font-size="30" stroke="#000" stroke-width="5" paint-order="stroke" fill="#fff">NGMI: Not Getting More Instant.</text>
 </svg>
