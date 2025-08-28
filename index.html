@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Banana Sloth Coin 🍌🦥 — Slow. Lazy. To The Moon.</title>
-  <meta name="description" content="Banana Sloth Coin — banana-logic memecoin with animated monkey memes.">
+  <title>BananaSlothCoin 🍌🦥 — Slow. Lazy. To The Moon.</title>
+  <meta name="description" content="BananaSlothCoin — banana-logic memecoin with animated monkey memes.">
   <link rel="icon" href="logo.svg" type="image/svg+xml" />
   <style>
     :root{
@@ -20,13 +20,12 @@
     }
     .wrap{max-width:1100px;margin:0 auto;padding:24px}
     header{
-      display:grid; grid-template-columns: 96px 1fr auto; gap:16px; align-items:center;
+      display:grid; grid-template-columns: 96px 1fr; gap:16px; align-items:center;
       background:var(--panel); border:1px solid var(--border); border-radius:16px; padding:14px 16px;
     }
     header img{width:92px;height:92px;border-radius:16px;box-shadow:0 6px 18px rgba(0,0,0,.45)}
     .title{font-size: clamp(26px, 3.8vw, 44px); font-weight:900; color:var(--yellow); margin:0}
     .subtitle{color:var(--muted); margin-top:2px; font-weight:600}
-    .btn{appearance:none;border:0;border-radius:999px;padding:12px 18px;font-weight:800;cursor:pointer;background:linear-gradient(180deg,var(--yellow),#ffd54f); color:#131200; box-shadow:0 10px 20px rgba(0,0,0,.35)}
     .section{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
     .card{background:var(--panel-2);border:1px solid var(--border);border-radius:16px;padding:22px}
     h2{margin:0 0 12px 0; color:var(--accent); font-size: clamp(18px,2.4vw,26px)}
@@ -51,19 +50,18 @@
 <body>
   <div class="wrap">
     <header>
-      <img src="logo.svg" alt="Banana Sloth Coin Logo"/>
+      <img src="logo.svg" alt="BananaSlothCoin Logo"/>
       <div>
-        <h1 class="title">Banana Sloth Coin</h1>
+        <h1 class="title">BananaSlothCoin</h1>
         <div class="subtitle">Slow. Lazy. To The Moon. 🚀</div>
       </div>
-      <button class="btn">Buy (...or later)</button>
     </header>
 
     <div class="section">
       <div class="card">
-        <h2>What is Banana Sloth Coin?</h2>
-        <p>Banana Sloth Coin is the ultimate memecoin. Each transaction “feeds” a virtual banana to a monkey — sunglasses on, gold tooth flashing, $BSC badge shining. Just bananas and vibes.</p>
-        <p><strong>Disclaimer:</strong> This project is amazing. This coin will go to Moon.</p>
+        <h2>What is BananaSlothCoin?</h2>
+        <p>BananaSlothCoin is the ultimate memecoin with ZERO utility. Each transaction “feeds” a virtual banana to a monkey — sunglasses on, gold tooth flashing, BSC badge shining. No utility, no roadmap, just bananas and vibes.</p>
+        <p><strong>Disclaimer:</strong> This project is satire. Not financial advice.</p>
       </div>
       <div class="card">
         <h2>Banana Orbit</h2>
@@ -76,13 +74,12 @@
       </div>
     </div>
 
-    
     <div class="card" style="margin-top:18px">
       <h2>Random Meme Generator</h2>
       <div id="rngBox" style="display:grid;place-items:center;gap:12px">
         <img id="rngMeme" src="meme1.svg" alt="Random Meme" style="width:min(640px,100%);border-radius:12px;border:1px solid var(--border);background:#111"/>
         <div class="bar">
-          <button class="btn" id="shuffleBtn">Shuffle Meme</button>
+          <button class="dl" id="shuffleBtn">Shuffle Meme</button>
           <a class="dl" id="rngDownload" href="meme1.svg" download>Download</a>
         </div>
       </div>
@@ -108,7 +105,8 @@
           <div class="bar">
             <div class="tags">
               <span class="tag">#Neon</span>
-              <span class="tag">#NapConsensus</span><span class="tag">#Female</span>
+              <span class="tag">#NapConsensus</span>
+              <span class="tag">#Female</span>
             </div>
             <a class="dl" href="meme2.svg" download>Download</a>
           </div>
@@ -130,7 +128,8 @@
           <div class="bar">
             <div class="tags">
               <span class="tag">#CRT</span>
-              <span class="tag">#HoldTheBranch</span><span class="tag">#Female</span>
+              <span class="tag">#HoldTheBranch</span>
+              <span class="tag">#Female</span>
             </div>
             <a class="dl" href="meme4.svg" download>Download</a>
           </div>
@@ -152,7 +151,8 @@
           <div class="bar">
             <div class="tags">
               <span class="tag">#Space</span>
-              <span class="tag">#SleepToEarn</span><span class="tag">#Female</span>
+              <span class="tag">#SleepToEarn</span>
+              <span class="tag">#Female</span>
             </div>
             <a class="dl" href="meme6.svg" download>Download</a>
           </div>
@@ -174,7 +174,8 @@
           <div class="bar">
             <div class="tags">
               <span class="tag">#Holo</span>
-              <span class="tag">#LazyByDesign</span><span class="tag">#Female</span>
+              <span class="tag">#LazyByDesign</span>
+              <span class="tag">#Female</span>
             </div>
             <a class="dl" href="meme8.svg" download>Download</a>
           </div>
@@ -183,7 +184,7 @@
       </div>
     </div>
 
-    <footer>© 2025 Banana Sloth Coin — Only vibes. 🍌🦧</footer>
+    <footer>© 2025 BananaSlothCoin — No utility. Only vibes. 🍌🦧</footer>
   </div>
 
   <script>
@@ -193,8 +194,7 @@
       const dl = document.getElementById('rngDownload');
       function shuffle(){
         const pick = files[Math.floor(Math.random()*files.length)];
-        img.src = pick;
-        dl.href = pick;
+        img.src = pick; dl.href = pick;
       }
       const btn = document.getElementById('shuffleBtn');
       if(btn){ btn.addEventListener('click', shuffle); shuffle(); }
