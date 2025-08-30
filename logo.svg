@@ -39,7 +39,7 @@
     <!-- $BSC badge -->
     <g transform="translate(240,258)">
       <circle cx="0" cy="0" r="34" fill="url(#shine)" stroke="#c8a904" stroke-width="4"/>
-      <text x="0" y="6" text-anchor="middle" font-family="Impact, system-ui, Arial, sans-serif" font-size="22" fill="#3a2a00">$BSC</text>
+      <text x="0" y="6" text-anchor="middle" font-family="Impact, system-ui, Arial, sans-serif" font-size="22" fill="#3a2a00">BSC</text>
     </g>
   </g>
 </svg>
